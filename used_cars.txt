@@ -1,15 +1,16 @@
 used_cars
 
-id - NUMBER -> INT
-price - NUMBER -> DECIMAL(8,2)
+id - NUMBER -> INT, PRIMARY_KEY(NOTNULL,UNIQUE, INDEX), AUTO_INCREMENT 
+name - STRING -> VARCHAR (40), NOTNULL
+price - NUMBER -> DECIMAL(8,2), NOTNULL
 color - STRING -> VARCHAR (20)
 km_traveled - NUMBER -> MEDIUMINT
-supply - STRING -> VARCHAR (20)
-license_plate - STRING -> VARCHAR (6)
-registration_year - DATE -> YEAR
-convertible - NUMBER (BOOLEAN) -> TINYINT
+supply - STRING -> VARCHAR (20), NOTNULL
+license_plate - STRING -> VARCHAR (6), NOTNULL, UNIQUE
+registration_year - DATE -> YEAR, NOTNULL
+convertible - NUMBER (BOOLEAN) -> TINYINT                   // Decappottabile
 description - STRING -> TEXT
-four_wheel_drive - NUMBER (BOOLEAN) -> TINYINT
-number_of_passengers - NUMBER -> TINYINT
-number_of_doors - NUMBER -> TINYINT
-transmission - STRING -> VARCHAR (15)
+four_wheel_drive - NUMBER (BOOLEAN) -> TINYINT              // 4x4
+number_of_passengers - NUMBER -> TINYINT, DEFAULT(2)
+number_of_doors - NUMBER -> TINYINT, DEFAULT(3)
+transmission - STRING -> VARCHAR (15), NOTNULL              // Cambio manuale o automatico
