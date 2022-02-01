@@ -1,0 +1,15 @@
+used_cars
+
+id
+price
+color
+km_traveled
+supply
+license_plate
+registration_year
+convertible
+description
+four_wheel_drive
+number_of_passengers
+number_of_doors
+transmission
