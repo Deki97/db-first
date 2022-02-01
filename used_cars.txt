@@ -1,15 +1,15 @@
 used_cars
 
-id - NUMBER
-price - NUMBER
-color - STRING
-km_traveled - NUMBER
-supply - STRING
-license_plate - STRING
-registration_year - NUMBER
-convertible - NUMBER (BOOLEAN)
-description - STRING
-four_wheel_drive - NUMBER (BOOLEAN)
-number_of_passengers - NUMBER
-number_of_doors - NUMBER
-transmission - STRING
+id - NUMBER -> INT
+price - NUMBER -> DECIMAL(8,2)
+color - STRING -> VARCHAR (20)
+km_traveled - NUMBER -> MEDIUMINT
+supply - STRING -> VARCHAR (20)
+license_plate - STRING -> VARCHAR (6)
+registration_year - DATE -> YEAR
+convertible - NUMBER (BOOLEAN) -> TINYINT
+description - STRING -> TEXT
+four_wheel_drive - NUMBER (BOOLEAN) -> TINYINT
+number_of_passengers - NUMBER -> TINYINT
+number_of_doors - NUMBER -> TINYINT
+transmission - STRING -> VARCHAR (15)
