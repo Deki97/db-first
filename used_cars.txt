@@ -6,7 +6,7 @@ price - NUMBER -> DECIMAL(8,2), NOTNULL
 color - STRING -> VARCHAR (20)
 km_traveled - NUMBER -> MEDIUMINT
 supply - STRING -> VARCHAR (20), NOTNULL
-license_plate - STRING -> VARCHAR (6), NOTNULL, UNIQUE
+license_plate - STRING -> VARCHAR (10), NOTNULL, UNIQUE
 registration_year - DATE -> YEAR, NOTNULL
 convertible - NUMBER (BOOLEAN) -> TINYINT                   // Decappottabile
 description - STRING -> TEXT
